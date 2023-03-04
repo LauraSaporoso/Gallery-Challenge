@@ -1,0 +1,75 @@
+/* ----- Galley section  slider----- */
+
+.slider {
+    width: 100%;
+    height: 100%;
+    /* height immagine centrale */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 550ms ease-in-out;
+    scroll-behavior: smooth;
+    z-index: 9999;
+}
+
+.slider img {
+    position: block;
+    width: 600px;
+    height: 100%;
+    object-fit: cover;
+    /* cerca cos'è*/
+    transition: all 500ms ease-in-out;
+}
+
+.slider img:nth-child(1) {
+    left: -900px;
+    z-index: 10;
+    position: absolute;
+    display: none;
+}
+
+.slider img:nth-child(2) {
+    left: -30px;
+    width: 225px;
+    height: 300px;
+    transform: scale(0.8);
+    rotate: -8.94deg;
+    opacity: 0.2;
+    filter: drop-shadow(2px 4px 0px #DDDDDD);
+    z-index: 20;
+    position: absolute;
+    transition: all 350ms ease-in-out;
+}
+
+.slider img:nth-child(3) {
+    z-index: 30;
+    max-width: 600px;
+    height: 450px;
+    /*   transition: all 350ms ease-in-out;*/
+}
+
+.slider img:nth-child(3):hover {
+    opacity: 0.8;
+    transition: all 350ms ease-in-out;
+    z-index: 9999;
+}
+
+.slider img:nth-child(4) {
+    right: -120px;
+    rotate: 8.32deg;
+    width: 360px;
+    height: 300px;
+    transform: scale(0.8);
+    transition: all 350ms ease-in-out;
+    opacity: 0.2;
+    filter: drop-shadow(2px 4px 0px #DDDDDD);
+    z-index: 20;
+    position: absolute;
+}
+
+.slider img:nth-child(5) {
+    right: -900px;
+    z-index: 10;
+    position: absolute;
+}

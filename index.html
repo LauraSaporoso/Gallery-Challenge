@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css" />
+
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2 class="h2-header">The page name</h2>
+    </header>
+    <!-- button left & right -->
+    <div class="container-arrow">
+
+        <div class="btn-circle circle-left" id="arrow-left"><button type="submit" class="btn changeUrl" id="left"><img
+                    src="images/arrowLeft.png" alt=""></button>
+        </div>
+
+        <div class="btn-circle circle-right"><button type="submit" class="btn" id="right"><img
+                    src="images/arrowRight.png" alt=""></button></div>
+
+    </div>
+
+    <!-- fine button left & right -->
+    <section>
+        <h1>The gallery name</h1>
+
+        <div id="sliderScroll" class="slider drag-slider">
+
+            <img draggable="true" id="imageDrag img1" data-hash="slide0" src="https://picsum.photos/id/10/600/600"
+                alt="img-slider">
+            <img draggable="true" id="imageDrag img2" data-hash="slide1" src="https://picsum.photos/id/11/600/600"
+                alt="img-slider">
+            <img draggable="true" id="imageDrag img3" data-hash="slide2" src="https://picsum.photos/id/12/600/600"
+                alt="img-slider">
+            <img draggable="true" id="imageDrag img4" data-hash="slide3" src="https://picsum.photos/id/13/600/600"
+                alt="img-slider">
+            <img draggable="true" id="imageDrag img5" data-hash="slide4" src="https://picsum.photos/id/14/600/600"
+                alt="img-slider">
+
+            <!--
+            <img class="img-slider" >
+            <img class="img-slider" >
+            <img class="img-slider" >
+            <img class="img-slider" >
+            <img class="img-slider" >
+        -->
+        </div>
+
+
+        </div>
+
+
+
+
+        <div class="text-slider">
+            <div class="text-container">
+
+                <div class="line">
+                    <div class="line-5-colored"></div>
+                </div>
+                <h2 class="h2-image">Nature</h2>
+                <p class="p-image">General caption of imgage with id #4</p>
+            </div>
+
+            <div class="text-container">
+                <div class="line">
+                    <div class="line-4-colored"></div>
+                </div>
+                <h2 class="h2-image">Nature</h2>
+                <p class="p-image">General caption of image with id #3</p>
+            </div>
+
+            <div class="text-container">
+                <div class="line">
+                    <div class="line-3-colored"></div>
+                </div>
+                <h2 class="h2-image">Nature</h2>
+                <p class="p-image ">General caption of image with id #2</p>
+            </div>
+
+            <div class="text-container">
+                <div class="line">
+                    <div class="line-2-colored"></div>
+                </div>
+                <h2 class="h2-image">Nature</h2>
+                <p class="p-image">General caption of image with id #1</p>
+            </div>
+
+            <div class="text-container">
+                <div class="line">
+                    <div class="line-1-colored"></div>
+                </div>
+                <h2 class="h2-image">Nature</h2>
+                <p class="p-image">General caption of image with id #0</p>
+            </div>
+
+
+
+        </div>
+        <!-- Arrow mobile -->
+        <div class="container-arrow-mobile">
+
+            <div class="btn-circle circle-left" id="arrow-left"><button type="submit" class="btn changeUrl"
+                    id="leftMobile"><img src="images/arrowLeft.png" alt=""></button>
+            </div>
+
+            <div class="btn-circle circle-right"><button type="submit" class="btn" id="rightMobile"><img
+                        src="images/arrowRight.png" alt=""></button></div>
+        </div>
+        <!-- Fine Arrow mobile -->
+    </section>
+    <!-- Slider text -->
+
+
+
+    <!-- CURSOR 🖱️ -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <!-- CURSOR 🖱️ -->
+
+    <footer>
+        <p>13-02-2023<span>&#9634;</span></p>
+    </footer>
+
+    <!-- Js-->
+    <script src="app.js"></script>
+</body>
+
+</html>

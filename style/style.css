@@ -1,0 +1,291 @@
+@import "button.css";
+@import "cursor.css";
+@import "images-container.css";
+@import "text-container.css";
+@import "drag.css";
+@import "footer.css";
+
+:root {
+    --black: #0E0F11;
+    --blue: #60A3AD;
+}
+
+/* Font Ortica light - normal */
+@font-face {
+    font-family: "Ortica-light";
+
+    src: url("font/Ortica-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Ortica-bold";
+
+    src: url("font/Ortica-Bold.woff") format("woff");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+
+body,
+html {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/Background.png);
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+header {
+    width: 100%;
+    height: 40px;
+}
+
+header .h2-header {
+    font-family: "Ortica-Light";
+    text-transform: uppercase;
+    font-size: 10px;
+    transform: rotate(-2deg);
+
+    color: var(--black);
+    opacity: 0.6;
+
+    padding: 0px 20px;
+}
+
+/* ----- Galley section  title----- */
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+}
+
+section h1 {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-inline: 1px;
+    color: var(--blue);
+    margin-bottom: 3%;
+    letter-spacing: 4px;
+    font-family: "Ortica-light";
+    margin-bottom: 50px;
+    padding-top: 9px;
+    transition: all 350ms ease;
+    z-index: 999999999999999;
+}
+
+section h1:hover {
+    transform: rotate(-7deg);
+
+    transition: all 350ms ease;
+}
+
+
+
+@media (max-width: 30em) {
+
+    * {
+        cursor: default;
+    }
+
+    header {
+        display: none;
+    }
+
+    body {
+        overflow: hidden;
+    }
+
+    body,
+    html {
+        height: 100vh;
+        width: 100%;
+        background-image: url(../images/Background.png);
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section h1 {
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+
+    .slider img:nth-child(2) {
+        display: none;
+    }
+
+    .slider img:nth-child(4) {
+        display: none;
+    }
+
+    section {
+        overflow: hidden;
+        margin-inline: 20px;
+    }
+
+    .slider {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        align-items: center;
+        display: block;
+
+    }
+
+    .slider img:nth-child(3) {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container-arrow {
+        position: absolute;
+        display: flex;
+        text-align: center;
+        margin-top: 100px;
+        flex-direction: row;
+        width: 100%;
+        /* Need a specific value to work */
+        justify-content: space-between;
+        bottom: 0px;
+    }
+
+    .line {
+        width: 200px;
+        border-top: 1px solid var(--black);
+    }
+
+    .line-1-colored,
+    .line-2-colored,
+    .line-3-colored,
+    .line-4-colored,
+    .line-5-colored {
+        width: 43px;
+        border-top: 1px solid var(--blue);
+    }
+
+    .line-1-colored {
+        left: 0px;
+        bottom: 0px;
+        position: absolute;
+        z-index: 2px;
+    }
+
+    .line-2-colored {
+        left: 40px;
+        bottom: 0px;
+        position: absolute;
+        z-index: 2px;
+    }
+
+    .line-3-colored {
+        left: 80px;
+        bottom: 0px;
+        position: absolute;
+        z-index: 2px;
+    }
+
+    .line-4-colored {
+        left: 120px;
+        bottom: 0px;
+        position: absolute;
+        z-index: 2px;
+    }
+
+    .line-5-colored {
+        left: 160px;
+        bottom: 0px;
+        position: absolute;
+        z-index: 2px;
+    }
+
+    .p-image {
+        font-size: 18px;
+        margin: 0px 0px;
+        width: 250px;
+    }
+
+    /* ----- Buttons left right ----- */
+    .container-arrow {
+        display: none;
+    }
+
+    .container-arrow-mobile {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .circle-right {
+        margin-left: 10px;
+    }
+
+    .circle-left {
+        margin-right: 10px;
+    }
+
+    /* ----- text-slider ----- */
+    .text-slider .text-container:nth-child(3) {
+        z-index: 30;
+        width: 300px;
+        height: 100%;
+    }
+
+    .text-slider {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: all 500ms ease-in-out;
+    }
+
+    .text-container {
+        position: inherit;
+        transition: all 500ms ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        display: none;
+    }
+
+
+    /* ----- Cursor ----- */
+    .cursor {
+        display: none;
+    }
+
+    .cursor2 {
+        display: none;
+    }
+
+    .hover {
+        display: none;
+    }
+
+}
+
+@media (max-width: 30em) {
+    .slider img:nth-child(3) {
+        width: 100%;
+        height: 250px;
+    }
+}

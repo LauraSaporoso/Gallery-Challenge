@@ -1,0 +1,10 @@
+/* drag */
+.slider .dragging {
+
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.slider .dragging img {
+    pointer-events: none;
+}

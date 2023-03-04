@@ -1,0 +1,63 @@
+/* ----- Buttons left right ----- */
+
+.container-arrow-mobile {
+    display: none;
+}
+
+.container-arrow {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    width: 100%;
+    /* Need a specific value to work */
+    justify-content: space-between;
+}
+
+
+.circle-right {
+    margin-right: 20px;
+}
+
+.circle-left {
+    margin-left: 20px;
+
+}
+
+.btn-circle {
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--black);
+    border-radius: 100%;
+    background-color: transparent;
+    z-index: 99999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.btn img {
+    width: 10px;
+    height: 7px;
+}
+
+.btn {
+    width: 31px;
+    height: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    background-color: var(--black);
+    border: solid var(--black);
+    margin: 0 0px;
+
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.3);
+    transition: 0.3s ease-in-out;
+}

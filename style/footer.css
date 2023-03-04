@@ -1,0 +1,30 @@
+/* ----- Footer ----- */
+
+footer {
+    opacity: 0.6;
+    color: var(--black);
+    width: 100%;
+    padding-bottom: 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    font-family: "Ortica-Light";
+}
+
+footer p {
+    transform: rotate(92.37deg);
+    margin-right: -15px;
+    font-size: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+footer span {
+    background-color: var(--black);
+    padding-inline: 1px;
+    font-size: 8px;
+    border-radius: 2px;
+    margin-left: 4px;
+}

@@ -1,0 +1,149 @@
+/* ----- text galley child logic----- */
+
+.text-slider {
+    width: 100%;
+    height: 30%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: all 500ms ease-in-out;
+
+}
+
+.text-container {
+    transition: all 500ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-slider .text-container:nth-child(1) {
+    position: absolute;
+    left: -900px;
+    display: none;
+}
+
+.text-slider .text-container:nth-child(2) {
+    left: -30px;
+    display: none;
+    position: absolute;
+
+}
+
+.text-slider .text-container:nth-child(3) {
+    z-index: 30;
+    width: 600px;
+
+
+}
+
+.text-slider .text-container:nth-child(4) {
+    right: -40px;
+    display: none;
+    position: absolute;
+}
+
+.text-slider .text-container:nth-child(5) {
+    right: -900px;
+    display: none;
+    position: absolute;
+}
+
+/* ----- text galley ----- */
+.line {
+    content: "";
+    border-top: 2px solid var(--black);
+    width: 400px;
+    margin-block: 20px 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line-1-colored,
+.line-2-colored,
+.line-3-colored,
+.line-4-colored,
+.line-5-colored {
+    content: "";
+    border-top: 2px solid var(--blue);
+    width: 80px;
+    bottom: 0px;
+    position: absolute;
+    z-index: 2px;
+}
+
+.line-1-colored {
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+    z-index: 2px;
+}
+
+.line-2-colored {
+    left: 80px;
+    bottom: 0px;
+    position: absolute;
+    z-index: 2px;
+}
+
+.line-3-colored {
+    left: 160px;
+    bottom: 0px;
+    position: absolute;
+    z-index: 2px;
+}
+
+.line-4-colored {
+    left: 240px;
+    bottom: 0px;
+    position: absolute;
+    z-index: 2px;
+}
+
+.line-5-colored {
+    left: 320px;
+    bottom: 0px;
+    position: absolute;
+    z-index: 2px;
+}
+
+
+.h2-image {
+    text-transform: uppercase;
+    color: var(--blue);
+    font-family: "Ortica";
+    font-size: 12px;
+    margin-bottom: 8px;
+    letter-spacing: 4px;
+}
+
+.p-image {
+    font-size: 32px;
+    height: 100%;
+    color: var(--black);
+    font-family: "Ortica-Light";
+    text-align: center;
+    transform: all 350ms ease-in-out;
+}
+
+.p-image {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
