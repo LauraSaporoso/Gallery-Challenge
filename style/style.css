@@ -136,6 +136,7 @@ section h1:hover {
     section {
         overflow: hidden;
         margin-inline: 20px;
+        padding-bottom: 20px;
     }
 
     .slider {
