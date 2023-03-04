@@ -227,7 +227,7 @@ section h1:hover {
     .container-arrow-mobile {
         display: flex;
         justify-content: center;
-        margin-bottom: 45px;
+        margin-bottom: 20%;
     }
 
     .circle-right {
