@@ -1,5 +1,5 @@
 # Gallery Challenge
-👩🏻‍💻 Per vedere il sito --> https://laurasaporoso.github.io/Gallery-Test/
+👩🏻‍💻 Per vedere il sito --> https://laurasaporoso.github.io/Gallery-Challenge/
 
 🔥 Gallery  
                         
